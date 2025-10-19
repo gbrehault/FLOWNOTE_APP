@@ -1,11 +1,108 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import { Github, Instagram, Globe } from "lucide-astro";
 ---
 
 <Layout>
-	<Welcome />
+  <main class="flex flex-col mx-4 gap-4">
+    <div
+      class="flex flex-col justify-center items-center bg-secondary p-4 rounded-2xl h-100"
+    >
+      <h1 class="text-title text-texte text-center font-bold">
+        Organisez vos idées, simplement
+      </h1>
+      <h3 class="text-texte text-center text-subtitle font-medium uppercase">
+        FlowNote, l’application web minimaliste pour écrire, sauvegarder et
+        <br />retrouver vos notes. Fini les distractions. Concentrez-vous sur
+        l’essentiel.
+      </h3>
+      <div class="flex items-center gap-6 mt-4">
+        <Globe
+          class="w-10 h-10 text-texte hover:text-secondary-dark transition-colors cursor-pointer"
+        />
+        <Instagram
+          class="w-10 h-10 text-texte hover:text-secondary-dark transition-colors cursor-pointer"
+        />
+        <Github
+          class="w-10 h-10 text-texte hover:text-secondary-dark transition-colors cursor-pointer"
+        />
+      </div>
+    </div>
+    <div class="flex gap-5 justify-between items-stretch">
+      <div
+        class="bg-bandlight w-1/3 rounded-2xl py-4 flex flex-col justify-center items-center gap-4 mb-2"
+      >
+        <h2
+          class="text-texte
+        text-subtitle
+        text-center
+        font-bold uppercase"
+        >
+          🗃️ Page Notes
+        </h2>
+        <h5 class="text-texte text-center font-bold">
+          Cette section regroupe toutes vos notes au même endroit.<br />Vous
+          pouvez :
+        </h5>
+        <p class="text-texte text-center px-10">
+          Parcourir vos notes déjà enregistrées, Les consulter rapidement <br
+          />Les gérer de manière simple et efficace.
+          <br />Les gérer de manière simple et efficace
+        </p>
+        <a
+          href="/"
+          class="inline-block px-10 py-2 bg-texte text-background-dark rounded-md font-bold hover:bg-banddark hover:text-background-dark transition-colors"
+          >Voir plus</a
+        >
+      </div>
+      <div
+        class="bg-secondary w-1/3 rounded-2xl py-4 flex flex-col justify-between items-center gap-4 mb-2"
+      >
+        <h2
+          class="text-texte
+        text-subtitle
+        text-center
+        font-bold uppercase"
+        >
+          ✏️ Page Ajouter
+        </h2>
+        <p class="text-texte text-center px-10">
+          C’est ici que vous créez une nouvelle note. Un champ <b>titre</b>, un
+          champ <b>contenu</b> et un bouton <b>Sauvegarder</b> : rien de plus. Chaque
+          idée est capturée en quelques secondes, sans superflu.
+        </p>
+        <a
+          href="/"
+          class="flex px-10 py-2 bg-texte text-background-dark items-center justify-center rounded-md font-bold hover:bg-secondary-dark hover:text-background-dark transition-colors"
+          >Voir plus</a
+        >
+      </div>
+      <div
+        class="bg-primary-dark w-1/3 rounded-2xl py-4 flex flex-col items-center justify-center gap-4 mb-2"
+      >
+        <h2
+          class="text-texte
+        text-subtitle
+        text-center
+        font-bold uppercase"
+        >
+          ❓ À propos
+        </h2>
+        <h5 class="text-texte text-center font-bold">
+          Cette section regroupe toutes vos notes au même endroit.<br />Vous
+          pouvez :
+        </h5>
+        <p class="text-texte text-center px-10">
+          <b> La page “À propos” répond aux questions essentielles : </b>
+          <br /> Qu’est-ce que FlowNote ? Pourquoi une app minimaliste ? Comment
+          vos notes sont-elles sauvegardées ? L’app est-elle gratuite ?
+        </p>
+        <a
+          href="/"
+          class="inline-block px-10 py-2 bg-texte text-background-dark rounded-md font-bold hover:bg-primary hover:text-background-dark transition-colors"
+          >Voir plus</a
+        >
+      </div>
+    </div>
+  </main>
 </Layout>

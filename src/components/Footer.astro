@@ -1,0 +1,74 @@
+---
+import { Github, Instagram, Globe } from "lucide-astro";
+---
+
+<footer class="w-full">
+  <main
+    class="flex flex-col justify-between items-center py-15 px-4 bg-background-light rounded-2xl shadow-md m-4 gap-10"
+  >
+    <div class="w-full flex justify-between items-center">
+      <!-- Logo -->
+      <div class="w-1/4 min-w-[140px] gap-[50px]flex items-center">
+        <img
+          src="/img/Logo-FlowNote-RVB.png"
+          alt="FlowNote Logo"
+          class="h-10 w-auto"
+        />
+      </div>
+
+      <!-- Navigation -->
+      <nav
+        class="w-1/2 flex flex-wrap justify-center gap-6 items-center text-center"
+      >
+        <a
+          href="/"
+          class="inline-block px-10 py-2 bg-texte text-background-dark rounded-md font-semibold hover:bg-black hover:text-background-dark transition-colors"
+          >Accueil</a
+        >
+        <a
+          href="/"
+          class="inline-block px-10 py-2 bg-bandlight text-texte rounded-md font-semibold hover:bg-banddark hover:text-texte transition-colors"
+          >Notes</a
+        >
+        <a
+          href="/"
+          class="inline-block px-10 py-2 bg-secondary text-texte rounded-md font-semibold hover:bg-secondary-dark hover:text-texte transition-colors"
+          >Ajouter</a
+        >
+        <a
+          href="/"
+          class="inline-block px-10 py-2 bg-primary-dark text-texte rounded-md font-semibold hover:bg-primary hover:text-texte transition-colors"
+          >À propos</a
+        >
+      </nav>
+
+      <!-- Icônes sociales -->
+      <div class="w-1/4 min-w-[120px] flex justify-end items-center gap-3">
+        <Globe
+          class="w-8 h-8 text-bandlight hover:text-banddark transition-colors cursor-pointer"
+        />
+        <Instagram
+          class="w-8 h-8 text-secondary-dark hover:text-secondary transition-colors cursor-pointer"
+        />
+        <Github
+          class="w-8 h-8 text-primary-dark hover:text-primary transition-colors cursor-pointer"
+        />
+      </div>
+    </div>
+    <div class="flex items-center gap-6">
+      <p class="text-accent text-texte">Mentions légales</p>
+      <p class="text-accent text-texte">Politique de confidentialité</p>
+      <p class="text-accent text-texte">Conditions d'utilisation</p>
+      <p class="text-accent text-texte">Politique de cookies</p>
+    </div>
+    <div>
+      <p class="text-accent text-[#575656] text-center">
+        © 2025 FlowNote. Tout droit réservé. | Designed by <a
+          href="brhcrea.netlify.app"
+          target="_blank"
+          rel="noopener noreferrer">BRHCREA</a
+        >
+      </p>
+    </div>
+  </main>
+</footer>
